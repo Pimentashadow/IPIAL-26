@@ -1,58 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>TelaLogin</title>
+    <link rel="shortcut icon" href="/IPIAL-26/src/assets/img/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../global/global.css">
     <link rel="stylesheet" href="../styles/index.css">
-    <link rel="shortcut icon" href="asset/img/icon/favicon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="/src/styles/login.css">
 </head>
+
 <body>
-   <header>
-    <div id="title">
+    <header>
         <h1>
-            IPIAL26
+            <a href="/index.html"><img src="../assets/img/favicon1.png" alt="Logo do IPIAL" width="50px"
+                    height="40px"></a>
+            <a href="/index.html">IPIAL-26</a>
         </h1>
-    </div>
-    <div id="link">
         <nav id="links">
-            <a href="#">Home</a>
-            <a href="#">Cursos</a>
-            <a href="#">Cadastro</a>
+            <a href="/index.html">Home</a>
+            <a href="/src/pages/resultado.html">Meu Resultado</a>
+            <a href="/src/pages/cadastro.html">Cadastro</a>
         </nav>
-    </div>
-    <div id="burguer"><button id="boto">ola</button></div>
-   </header>
-  <section class="container">
+        <div id="burguer"><button id="boto"><img src="../assets/img/menu-line.svg" alt=""></button></div>
+    </header>
+    <section class="containerlog">
         <div class="input-container">
             <form>
                 <div class="login">
                     <h1>Login</h1>
                 </div>
                 <div class="input-group">
-                    <input type="text" id="nome" id="text" name="text" required>
+                    <input type="text" name="nome" id="text" name="text" required>
                     <label for="text">Digite o seu Nome de Usuário</label>
                 </div>
-                
+
                 <div class="input-group">
                     <input type="password" id="password" name="password" required>
                     <label for="password">Digite a sua Senha</label>
                 </div>
 
-            
+
                 <div class="link-conta">
-                    <p><a href="#">Esqueceu a sua senha?</a></p>
-                    <p id="paragrafo">Ainda não tem  uma conta?</p>
+                    <p class="paragrafo"><a href="#">Esqueceu a sua senha?</a></p>
+                    <p class="paragrafo">Ainda não tem uma conta?</p>
                     <p><a href="#">Crie já uma conta</a></p>
                 </div>
                 <div class="button-login" required>
-                    <input  id="a1" onclick="logar(); return false" type="submit" value="Enviar">
+                    <input id="a1" onclick="logar()" type="submit" value="Enviar">
                 </div>
- 
+
             </form>
         </div>
     </section>
-   <footer>
+    <footer>
 
         <div class="line-full"></div>
 
@@ -113,6 +115,7 @@
 
         </div>
     </footer>
-   <script src="../javascript/script.js"></script>
+    <script src="../javascript/script.js"></script>
 </body>
+
 </html>
